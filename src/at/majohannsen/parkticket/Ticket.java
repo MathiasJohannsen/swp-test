@@ -17,7 +17,7 @@ public class Ticket {
     }
 
     double getPrice() {
-        return ((new Date()).getTime() - startTimestamp.getTime())/60000;
+        return ((new Date()).getTime() - startTimestamp.getTime())/(double)60000;
     }
 
     public Date getStartTimestamp() {
